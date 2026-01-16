@@ -1,0 +1,464 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "text": "={{ $json.body }}{{ $json.chatInput }}",
+        "attributes": {
+          "attributes": [
+            {
+              "name": "palabras_clave",
+              "description": "Obtén la palabra clave"
+            },
+            {
+              "name": "sueldo_max",
+              "type": "number",
+              "description": "identificar si el usuario hablo de sueldo maximo"
+            },
+            {
+              "name": "sueldo",
+              "type": "number",
+              "description": "identificar si el usuario hablo de sueldo"
+            },
+            {
+              "name": "sueldo_min",
+              "type": "number",
+              "description": "identificar si el usuario hablo de sueldo minimo"
+            },
+            {
+              "name": "palabras_clave2",
+              "description": "Obtén la palabra clave 2"
+            }
+          ]
+        },
+        "options": {
+          "systemPromptTemplate": "=Eres un algoritmo experto en extracción de información.\nExtrae únicamente la palabra clave relevante del texto.\n\nSi la palabra clave no puede identificarse con claridad, omítela.\n\nDevuelve solo la palabra clave, no en formato de lista, y sin explicaciones ni texto adicional.\n\nConcéntrate en términos como roles, niveles de experiencia y tecnologías (por ejemplo: redes, junior, senior, networking, switches, routers, configuración, desarrollo, arquitecto)."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1.2,
+      "position": [-96, -32],
+      "id": "d953156c-76e1-46cf-ba07-ec690519f1e6",
+      "name": "Information Extractor",
+      "executeOnce": false,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://192.168.8.106:8000/prueba/",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "texto",
+              "value": "={{ $('Webhook').item.json.body }}"
+            },
+            {
+              "name": "payloads",
+              "value": "={{ $('Information Extractor').item.json.output }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [224, -32],
+      "id": "c2353ec8-a637-46cf-b3e8-35bf17294d58",
+      "name": "HTTP Request",
+      "executeOnce": false,
+      "retryOnFail": true,
+      "onError": "continueErrorOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "8819271c-62ec-4b38-99c6-371300947eaa",
+              "leftValue": "={{ $json.points }}",
+              "rightValue": "",
+              "operator": {
+                "type": "array",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [432, -48],
+      "id": "72731696-44ed-4783-a889-ebcd521a237a",
+      "name": "If"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=\nVacantes:{{ JSON.stringify($json.points) }}\n\nprompt del usuario: {{ $('Webhook').item.json.body }}",
+        "options": {
+          "systemMessage": "Eres un asistente de vacantes.\n\nUtiliza estas vacantes para darle recomendaciones al usuario sobre el área profesional de estas vacantes.\n\nTambién saca las 5 primeras opciones que mas se parecen a lo que pidio el usuario si el prompt del usuario y los resultados fueron muy especificos.\n\nTambien intenta hazle preguntas sobre si quiere automatizar la aplicacion hacia estas vacantes o si quiere que se le envie por gmail estas.\n\nSi las vacantes vienen vacias returna que no se encontraron vacantes.\n\nNo agreges \"\" en el texto."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [640, -32],
+      "id": "7e320444-0a32-4e1b-87f0-96f7c7fe50ed",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "qwen2.5:14b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [-96, 144],
+      "id": "49cb4d63-4270-4cb2-a0d3-95c64069c795",
+      "name": "Ollama Chat Model1",
+      "credentials": {
+        "ollamaApi": {
+          "id": "4GY2JieZckXU3PHl",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "=  {\n    \"IA_text\": \"{{ $json.IA_text.replace(/\"/g, \"'\") }}\",\n    \"Vacantes\": {{ JSON.stringify($('HTTP Request').item.json.points)}}\n  }",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [1296, -32],
+      "id": "545521c7-afdf-4e34-bcb1-1f4afc5402df",
+      "name": "Respond to Webhook",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "78c7647f-80d1-45ef-91f0-c83821d935e5",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [-384, -64],
+      "id": "86f2b628-f605-4aee-9652-00fe7e6d5b94",
+      "name": "Webhook",
+      "webhookId": "78c7647f-80d1-45ef-91f0-c83821d935e5"
+    },
+    {
+      "parameters": {
+        "jsCode": "const cleanText = $input.first().json.output.replace(/\\n/g, '\\\\n');\n\nreturn [{\n  json: {\n    IA_text: cleanText,\n  }\n}];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1088, -32],
+      "id": "0f9b3355-264a-4caa-901d-8e94755ea024",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "18163722-f395-451d-936f-c65cf88d777d",
+              "leftValue": "={{ $json.points }}",
+              "rightValue": "",
+              "operator": {
+                "type": "array",
+                "operation": "empty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [544, -208],
+      "id": "bd2850c3-3da9-45c3-afe7-51f6e06d63b8",
+      "name": "If1"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "991a6068-7070-4be8-8515-898a5c9e5579",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [400, 288],
+      "id": "406b6a6b-4a7b-4a9b-aa9f-c82b9cc006d5",
+      "name": "Webhook1",
+      "webhookId": "991a6068-7070-4be8-8515-898a5c9e5579"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Cuando el usuario hable sobre buscar una oferta de empleo utiliza la tool y en el valor del body escribe el input del usuario. Cuando el el tool retorne el json envia ese json al backend, no hagas mas nada, ni lo comentes ni nada, solo retorna ese json\n\nMensaje del usuario: {{ $json.body }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [640, 288],
+      "id": "92671ea8-a659-4782-af36-bc24bfeae578",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://192.168.8.106:8000/Chat_llm/",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "ususario_respuesta",
+              "value": "={{ $('Webhook').item.json.body }}{{ $('When chat message received').item.json.chatInput }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [768, -224],
+      "id": "df5b956e-1f5b-4945-8ec4-74a77e62c3d4",
+      "name": "HTTP Request1"
+    },
+    {
+      "parameters": {
+        "toolDescription": "Cuando el usuario hable sobre buscar una oferta de empleo utiliza este nodo y en el valor del body escribe el input del usuario",
+        "method": "POST",
+        "url": "http://192.168.8.106:8000/pruebas_frontend/",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "prompt",
+              "value": "={{ $json.body }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.3,
+      "position": [784, 528],
+      "id": "97e5fa58-71f6-40e7-a978-56289adbd75b",
+      "name": "HTTP Request2"
+    },
+    {
+      "parameters": {
+        "model": "llama3.2:3b",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [640, 160],
+      "id": "1e9e1930-04ab-4ad9-a343-ceafeafd40c6",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "4GY2JieZckXU3PHl",
+          "name": "Ollama account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [-384, 144],
+      "id": "381b90f3-df13-48a6-8fb1-9683ed7a5c5d",
+      "name": "When chat message received",
+      "webhookId": "804c8833-280a-414f-ada7-12cad682c82a"
+    }
+  ],
+  "connections": {
+    "Information Extractor": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond to Webhook": {
+      "main": [[]]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [[]]
+    },
+    "HTTP Request2": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "dca26a238227d1b80a317f5ce705d6390288a80619b32a57cc1b061172ea4823"
+  }
+}
