@@ -1,6 +1,6 @@
 # Demo del sistema (aun en desarrollo)
 
-https://github.com/alfredmarcelo/Portal_Empleos_IA/blob/main/Screen%20Video.mp4
+https://youtu.be/n28cjkBdp8U
 
 # Descripción
 
