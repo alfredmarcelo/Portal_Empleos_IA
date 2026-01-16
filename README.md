@@ -1,6 +1,6 @@
 # Demo del sistema (aun en desarrollo)
 
-https://youtu.be/n28cjkBdp8U
+https://github.com/user-attachments/assets/2acb73a4-ab89-4654-84b6-17ed9d57eb9c
 
 # Descripción
 
