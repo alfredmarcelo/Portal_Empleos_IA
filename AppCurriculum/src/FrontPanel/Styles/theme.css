@@ -1,0 +1,41 @@
+:root {
+    /* Light mode (default) */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    /* Slightly off-white for cards/buttons */
+    --bg-tertiary: #f1f3f5;
+    /* Subtle gray for boxes */
+    --bg-hover: #e9ecef;
+
+    --text-primary: #212529;
+    --text-secondary: #6c757d;
+
+    --border-color: #dee2e6;
+    --border-light: rgba(0, 0, 0, 0.05);
+
+    --icon-color: #495057;
+    --accent-color: #007bff;
+    /* Example accent color */
+
+    --job-frame-bg: #ffffff;
+    /* White background for map container */
+}
+
+[data-theme="dark"] {
+    /* Dark mode */
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2c2c2c;
+    --bg-hover: #3a3a3a;
+
+    --text-primary: #e9ecef;
+    --text-secondary: #adb5bd;
+
+    --border-color: #495057;
+    --border-light: rgba(255, 255, 255, 0.05);
+
+    --icon-color: #ced4da;
+    --accent-color: #4dabf7;
+
+    --job-frame-bg: #1e1e1e;
+}

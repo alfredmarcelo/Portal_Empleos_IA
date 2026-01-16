@@ -1,0 +1,207 @@
+@import "./theme.css";
+@import 'leaflet/dist/leaflet.css';
+
+#FrontPanel-Main {
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  min-height: 93.7vh;
+}
+
+#Text-Input-Section {
+  margin-bottom: 10%;
+}
+
+#front-panel-title {
+  font-weight: 200;
+  color: var(--text-primary);
+  font-style: oblique;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#TextInput-Content {
+  width: 53vh;
+  height: 50px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+#TextInput {
+  width: 90%;
+  height: 70%;
+  border-radius: 20px;
+  color: var(--text-primary);
+  padding-left: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+  transition: width 0.5s ease-in-out;
+}
+
+#TextInput::placeholder {
+  color: var(--text-secondary);
+}
+
+#Upload-File-Icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: var(--text-primary);
+}
+
+#Job-Search-Section {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+#Job-Search-Frame {
+  width: 50%;
+  height: 80vh;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--job-frame-bg);
+  color: var(--text-primary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* pointer-events: none; */
+  background-color: var(--bg-primary);
+}
+
+#Job-Search-Frame2 {
+  width: 50%;
+  height: 80vh;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--job-frame-bg);
+  color: var(--text-primary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#IA-Section {
+  width: 22%;
+  height: 80vh;
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid var(--border-color);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+#IA-Text-Container {
+  background-color: var(--bg-primary);
+  transition: background-color 1s ease-in-out;
+}
+
+#Hide-IA-Section {
+  width: 40px;
+  height: 100%;
+  background-color: var(--bg-primary);
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+#Hide-IA-Section:hover {
+  cursor: pointer;
+  background-color: var(--bg-secondary);
+}
+
+#Hide-Screen-IA {
+  width: 100vh;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.822);
+  position: absolute;
+  transition: background-color 1s ease-in-out;
+}
+
+#IA-Text-Container {
+  width: 85%;
+  height: 100%;
+  min-width: 370px;
+  padding-inline: 10px;
+  text-align: start;
+  color: var(--text-primary);
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#Searching-Message {
+  width: 20%;
+  max-height: 80.4vh;
+  background-color: var(--bg-tertiary);
+  font-weight: 200;
+  color: var(--text-primary);
+  font-style: oblique;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#Top-Front-Panel-Bar {
+  width: 72%;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  margin-left: 10%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+#Type-Attachment-Section {
+  width: 15%;
+  height: 50%;
+  background-color: var(--bg-tertiary);
+  border-radius: 100px;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  margin-right: 10px;
+}
+
+#Text-Container {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 100px;
+}
+
+#Text-Container:hover {
+  cursor: pointer;
+}
+
+#Texto-Attachment {
+  color: var(--text-primary);
+  font-weight: 200;
+  font-size: 16px;
+}

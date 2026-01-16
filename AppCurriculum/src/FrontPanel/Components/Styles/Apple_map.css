@@ -1,0 +1,95 @@
+#Job-Search-Frame2 {
+    width: 50%;
+    height: 80vh;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--job-frame-bg);
+    color: var(--text-primary);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#Map-Container {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    position: relative;
+}
+
+#Maps {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid var(--border-color);
+    z-index: 1;
+}
+
+#Info-Container {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Info-Box {
+    background-color: var(--job-frame-bg);
+    width: 33.33%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+}
+
+.Info-Box:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background-color: var(--border-color);
+}
+
+.Info-Box p {
+    font-size: 1rem;
+    color: var(--text-primary);
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.Info-Box h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+#Buttons-Container {
+    width: 25%;
+    height: 34px;
+    position: absolute;
+    right: 5px;
+    bottom: -2px;
+    background-color: var(--job-frame-bg);
+    z-index: 100;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Button {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}

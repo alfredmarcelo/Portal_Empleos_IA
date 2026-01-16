@@ -1,0 +1,683 @@
+
+    {
+        "puesto": "ingeniero de redes senior",
+        "modalidad": "remoto",
+        "sueldo": 120000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "responsable del diseño, implementación y mantenimiento de redes empresariales, firewalls y routing avanzado.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["redes", "firewalls", "routing", "cisco", "networking", "senior"]
+    },
+    {
+        "puesto": "ingeniero de software junior",
+        "modalidad": "hibrido",
+        "sueldo": 30000,
+        "horario": "lunes a sabados, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "creacion y mantenimiento de aplicaciones.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["software", "desarrollo", "aplicaciones", "junior", "programación"]
+    },
+    {
+        "puesto": "ingeniero de redes senior",
+        "modalidad": "remoto",
+        "sueldo": 115000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "responsable del diseño, implementación y mantenimiento de redes empresariales, firewalls y routing avanzado.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["redes", "firewalls", "routing", "cisco", "networking", "senior"]
+    },
+    {
+        "puesto": "ingeniero de software junior",
+        "modalidad": "hibrido",
+        "sueldo": 28000,
+        "horario": "lunes a sabados, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "creacion y mantenimiento de aplicaciones.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["software", "desarrollo", "aplicaciones", "junior", "programación"]
+    },
+    {
+        "puesto": "analista de datos",
+        "modalidad": "presencial",
+        "sueldo": 45000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "análisis de datos empresariales, creación de reportes y dashboards para la toma de decisiones.",
+        "beneficios": [
+            "seguro médico",
+            "bono anual",
+            "estacionamiento"
+        ],
+        "palabras_clave": ["datos", "análisis", "reportes", "dashboards", "bi", "excel"]
+    },
+    {
+        "puesto": "desarrollador full stack",
+        "modalidad": "remoto",
+        "sueldo": 85000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones web con tecnologías front-end y back-end modernas.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "equipos de última generación",
+            "días libres adicionales"
+        ],
+        "palabras_clave": ["full stack", "frontend", "backend", "web", "javascript", "react"]
+    },
+    {
+        "puesto": "gerente de proyectos ti",
+        "modalidad": "hibrido",
+        "sueldo": 95000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "coordinación de proyectos tecnológicos, gestión de equipos y seguimiento de objetivos.",
+        "beneficios": [
+            "seguro médico",
+            "bono por desempeño",
+            "capacitaciones pagadas",
+            "horario flexible"
+        ],
+        "palabras_clave": ["gestión de proyectos", "pmp", "agile", "scrum", "liderazgo", "ti"]
+    },
+    {
+        "puesto": "especialista en ciberseguridad",
+        "modalidad": "remoto",
+        "sueldo": 110000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "implementación de medidas de seguridad, análisis de vulnerabilidades y respuesta a incidentes.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "certificaciones pagadas",
+            "bono anual"
+        ],
+        "palabras_clave": ["ciberseguridad", "seguridad", "vulnerabilidades", "incidentes", "ethical hacking", "soc"]
+    },
+    {
+        "puesto": "diseñador ux/ui",
+        "modalidad": "hibrido",
+        "sueldo": 52000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santiago",
+        "descripcion": "diseño de interfaces y experiencias de usuario para aplicaciones web y móviles.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "trabajo remoto parcial"
+        ],
+        "palabras_clave": ["ux", "ui", "diseño", "figma", "prototipado", "interfaces"]
+    },
+    {
+        "puesto": "ingeniero devops",
+        "modalidad": "remoto",
+        "sueldo": 100000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "automatización de procesos, gestión de infraestructura cloud y pipelines ci/cd.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones pagadas",
+            "bono trimestral"
+        ],
+        "palabras_clave": ["devops", "ci/cd", "docker", "kubernetes", "cloud", "automatización"]
+    },
+    {
+        "puesto": "soporte técnico nivel 1",
+        "modalidad": "presencial",
+        "sueldo": 22000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "atención al usuario final, resolución de tickets y soporte remoto básico.",
+        "beneficios": [
+            "seguro médico",
+            "transporte",
+            "capacitaciones"
+        ],
+        "palabras_clave": ["soporte técnico", "helpdesk", "tickets", "troubleshooting", "usuario final"]
+    },
+    {
+        "puesto": "administrador de bases de datos",
+        "modalidad": "hibrido",
+        "sueldo": 75000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "administración y optimización de bases de datos sql y nosql.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones pagadas"
+        ],
+        "palabras_clave": ["bases de datos", "sql", "nosql", "mysql", "postgresql", "mongodb"]
+    },
+    {
+        "puesto": "desarrollador mobile",
+        "modalidad": "remoto",
+        "sueldo": 80000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones móviles nativas e híbridas para ios y android.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "equipos apple",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["mobile", "ios", "android", "swift", "kotlin", "react native"]
+    },
+    {
+        "puesto": "analista de qa",
+        "modalidad": "hibrido",
+        "sueldo": 38000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santiago",
+        "descripcion": "pruebas de software, automatización de testing y aseguramiento de calidad.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "capacitaciones"
+        ],
+        "palabras_clave": ["qa", "testing", "automatización", "selenium", "calidad", "pruebas"]
+    },
+    {
+        "puesto": "arquitecto de software",
+        "modalidad": "remoto",
+        "sueldo": 135000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "diseño de arquitecturas de software escalables y definición de estándares técnicos.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "bono anual",
+            "conferencias internacionales"
+        ],
+        "palabras_clave": ["arquitectura", "software", "escalabilidad", "microservicios", "diseño", "senior"]
+    },
+    {
+        "puesto": "ingeniero de software junior",
+        "modalidad": "presencial",
+        "sueldo": 32000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "desarrollo y mantenimiento de aplicaciones bajo supervisión.",
+        "beneficios": [
+            "seguro médico",
+            "capacitaciones pagadas",
+            "almuerzo"
+        ],
+        "palabras_clave": ["software", "desarrollo", "junior", "programación", "aplicaciones"]
+    },
+    {
+        "puesto": "especialista en cloud computing",
+        "modalidad": "remoto",
+        "sueldo": 105000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "gestión de infraestructura en aws, azure o google cloud.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "certificaciones cloud",
+            "bono semestral"
+        ],
+        "palabras_clave": ["cloud", "aws", "azure", "gcp", "infraestructura", "nube"]
+    },
+    {
+        "puesto": "ingeniero de machine learning",
+        "modalidad": "remoto",
+        "sueldo": 125000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo e implementación de modelos de ml y algoritmos de ia.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "equipos de alto rendimiento",
+            "capacitaciones avanzadas"
+        ],
+        "palabras_clave": ["machine learning", "ml", "ia", "python", "tensorflow", "algoritmos"]
+    },
+    {
+        "puesto": "coordinador de it",
+        "modalidad": "hibrido",
+        "sueldo": 55000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "coordinación del departamento de ti, gestión de inventario y proveedores.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "bono anual"
+        ],
+        "palabras_clave": ["coordinación", "it", "gestión", "inventario", "proveedores", "ti"]
+    },
+    {
+        "puesto": "desarrollador backend",
+        "modalidad": "remoto",
+        "sueldo": 72000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de apis restful y microservicios con node.js o python.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["backend", "api", "rest", "nodejs", "python", "microservicios"]
+    },
+    {
+        "puesto": "desarrollador frontend",
+        "modalidad": "hibrido",
+        "sueldo": 65000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "santiago",
+        "descripcion": "desarrollo de interfaces web con react, vue o angular.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "equipos modernos"
+        ],
+        "palabras_clave": ["frontend", "react", "vue", "angular", "javascript", "web"]
+    },
+    {
+        "puesto": "ingeniero de redes junior",
+        "modalidad": "presencial",
+        "sueldo": 35000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "soporte en configuración de redes, switches y routers bajo supervisión.",
+        "beneficios": [
+            "seguro médico",
+            "capacitaciones técnicas",
+            "transporte"
+        ],
+        "palabras_clave": ["redes", "switches", "routers", "networking", "junior", "configuración"]
+    },
+    {
+        "puesto": "científico de datos",
+        "modalidad": "remoto",
+        "sueldo": 115000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "análisis estadístico avanzado, modelado predictivo y visualización de datos.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "conferencias especializadas",
+            "bono anual"
+        ],
+        "palabras_clave": ["data science", "análisis", "estadística", "python", "r", "machine learning"]
+    },
+    {
+        "puesto": "administrador de sistemas",
+        "modalidad": "hibrido",
+        "sueldo": 68000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "administración de servidores linux/windows, monitoreo y respaldo de sistemas.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones pagadas"
+        ],
+        "palabras_clave": ["sysadmin", "linux", "windows", "servidores", "backups", "monitoreo"]
+    },
+    {
+        "puesto": "ingeniero de software senior",
+        "modalidad": "remoto",
+        "sueldo": 105000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de soluciones complejas, mentoría a desarrolladores junior.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "bono por desempeño",
+            "capacitaciones internacionales"
+        ],
+        "palabras_clave": ["software", "senior", "desarrollo", "mentoría", "arquitectura", "liderazgo"]
+    },
+    {
+        "puesto": "especialista en business intelligence",
+        "modalidad": "hibrido",
+        "sueldo": 70000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "creación de reportes ejecutivos, dashboards con power bi y análisis de kpis.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "bono trimestral"
+        ],
+        "palabras_clave": ["bi", "business intelligence", "power bi", "reportes", "dashboards", "kpis"]
+    },
+    {
+        "puesto": "desarrollador python",
+        "modalidad": "remoto",
+        "sueldo": 78000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones y scripts con python para automatización y análisis.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones pagadas"
+        ],
+        "palabras_clave": ["python", "desarrollo", "automatización", "scripts", "django", "flask"]
+    },
+    {
+        "puesto": "técnico de soporte ti",
+        "modalidad": "presencial",
+        "sueldo": 25000,
+        "horario": "lunes a sabados, 8am - 5pm",
+        "ubicacion": "santiago",
+        "descripcion": "soporte técnico a usuarios, instalación de software y hardware básico.",
+        "beneficios": [
+            "seguro médico",
+            "transporte",
+            "almuerzo"
+        ],
+        "palabras_clave": ["soporte", "técnico", "hardware", "software", "instalación", "helpdesk"]
+    },
+    {
+        "puesto": "product manager tech",
+        "modalidad": "hibrido",
+        "sueldo": 90000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "definición de roadmap de productos tecnológicos y coordinación con equipos de desarrollo.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "bono anual",
+            "capacitaciones en gestión"
+        ],
+        "palabras_clave": ["product manager", "roadmap", "agile", "producto", "tech", "gestión"]
+    },
+    {
+        "puesto": "ingeniero de automatización",
+        "modalidad": "remoto",
+        "sueldo": 88000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "automatización de procesos industriales y desarrollo de scripts de automatización.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "certificaciones técnicas"
+        ],
+        "palabras_clave": ["automatización", "scripts", "python", "rpa", "procesos", "industriales"]
+    },
+    {
+        "puesto": "analista de sistemas",
+        "modalidad": "presencial",
+        "sueldo": 48000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "análisis de requerimientos, documentación técnica y pruebas funcionales.",
+        "beneficios": [
+            "seguro médico",
+            "capacitaciones",
+            "estacionamiento"
+        ],
+        "palabras_clave": ["análisis", "requerimientos", "documentación", "sistemas", "pruebas", "funcional"]
+    },
+    {
+        "puesto": "ingeniero de redes senior",
+        "modalidad": "hibrido",
+        "sueldo": 118000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santiago",
+        "descripcion": "diseño, implementación y mantenimiento de infraestructura de red empresarial.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones cisco",
+            "bono anual"
+        ],
+        "palabras_clave": ["redes", "networking", "cisco", "infraestructura", "senior", "firewalls"]
+    },
+    {
+        "puesto": "desarrollador java",
+        "modalidad": "remoto",
+        "sueldo": 82000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones empresariales con java spring boot.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones oracle",
+            "equipos modernos"
+        ],
+        "palabras_clave": ["java", "spring boot", "desarrollo", "backend", "microservicios", "api"]
+    },
+    {
+        "puesto": "scrum master",
+        "modalidad": "hibrido",
+        "sueldo": 62000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "facilitación de ceremonias ágiles y remoción de impedimentos del equipo.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones scrum"
+        ],
+        "palabras_clave": ["scrum", "agile", "facilitación", "ceremonias", "sprint", "metodologías ágiles"]
+    },
+    {
+        "puesto": "ingeniero de telecomunicaciones",
+        "modalidad": "presencial",
+        "sueldo": 72000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "gestión de sistemas de telecomunicaciones, voip y redes de comunicación.",
+        "beneficios": [
+            "seguro médico",
+            "bono anual",
+            "vehículo de empresa"
+        ],
+        "palabras_clave": ["telecomunicaciones", "voip", "comunicaciones", "redes", "telefonía", "pbx"]
+    },
+    {
+        "puesto": "desarrollador .net",
+        "modalidad": "remoto",
+        "sueldo": 76000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones con c# y framework .net core.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones microsoft"
+        ],
+        "palabras_clave": [".net", "c#", "asp.net", "desarrollo", "backend", "microsoft"]
+    },
+    {
+        "puesto": "analista de seguridad informática",
+        "modalidad": "hibrido",
+        "sueldo": 85000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "monitoreo de amenazas, análisis de logs y respuesta a incidentes de seguridad.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones de seguridad",
+            "bono semestral"
+        ],
+        "palabras_clave": ["seguridad", "ciberseguridad", "soc", "incidentes", "amenazas", "análisis"]
+    },
+    {
+        "puesto": "ingeniero de software junior",
+        "modalidad": "remoto",
+        "sueldo": 33000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo y mantenimiento de aplicaciones con supervisión técnica.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones pagadas",
+            "mentoría"
+        ],
+        "palabras_clave": ["software", "junior", "desarrollo", "programación", "aplicaciones", "mentoría"]
+    },
+    {
+        "puesto": "líder técnico",
+        "modalidad": "hibrido",
+        "sueldo": 110000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "liderazgo técnico del equipo de desarrollo, revisión de código y arquitectura.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "bono por desempeño",
+            "capacitaciones avanzadas"
+        ],
+        "palabras_clave": ["tech lead", "liderazgo", "arquitectura", "code review", "desarrollo", "senior"]
+    },
+    {
+        "puesto": "especialista en erp",
+        "modalidad": "presencial",
+        "sueldo": 65000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santiago",
+        "descripcion": "implementación y soporte de sistemas erp empresariales como sap u odoo.",
+        "beneficios": [
+            "seguro médico",
+            "capacitaciones erp",
+            "bono anual"
+        ],
+        "palabras_clave": ["erp", "sap", "odoo", "implementación", "sistemas empresariales", "consultor"]
+    },
+    {
+        "puesto": "desarrollador php",
+        "modalidad": "remoto",
+        "sueldo": 58000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de aplicaciones web con php laravel o symfony.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "capacitaciones"
+        ],
+        "palabras_clave": ["php", "laravel", "symfony", "backend", "web", "mysql"]
+    },
+    {
+        "puesto": "ingeniero de soporte técnico senior",
+        "modalidad": "hibrido",
+        "sueldo": 52000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "soporte técnico avanzado, escalamiento de casos complejos y mentoría.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones técnicas"
+        ],
+        "palabras_clave": ["soporte técnico", "senior", "escalamiento", "troubleshooting", "mentoría", "helpdesk"]
+    },
+    {
+        "puesto": "administrador salesforce",
+        "modalidad": "remoto",
+        "sueldo": 92000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "administración y customización de plataforma salesforce crm.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "certificaciones salesforce",
+            "bono anual"
+        ],
+        "palabras_clave": ["salesforce", "crm", "apex", "customización", "administración", "cloud"]
+    },
+    {
+        "puesto": "ingeniero de ia",
+        "modalidad": "remoto",
+        "sueldo": 130000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "investigación y desarrollo de soluciones de inteligencia artificial.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "equipos especializados",
+            "publicaciones científicas"
+        ],
+        "palabras_clave": ["ia", "inteligencia artificial", "deep learning", "python", "investigación", "nlp"]
+    },
+    {
+        "puesto": "consultor sap",
+        "modalidad": "hibrido",
+        "sueldo": 98000,
+        "horario": "lunes a viernes, 9am - 6pm",
+        "ubicacion": "santo domingo",
+        "descripcion": "consultoría e implementación de módulos sap para clientes corporativos.",
+        "beneficios": [
+            "seguro médico",
+            "horario flexible",
+            "certificaciones sap",
+            "viáticos"
+        ],
+        "palabras_clave": ["sap", "consultor", "erp", "implementación", "módulos", "abap"]
+    },
+    {
+        "puesto": "especialista en blockchain",
+        "modalidad": "remoto",
+        "sueldo": 115000,
+        "horario": "lunes a viernes, 10am - 7pm",
+        "ubicacion": "república dominicana",
+        "descripcion": "desarrollo de smart contracts y aplicaciones descentralizadas.",
+        "beneficios": [
+            "seguro médico",
+            "trabajo remoto",
+            "tokens de proyecto",
+            "conferencias internacionales"
+        ],
+        "palabras_clave": ["blockchain", "smart contracts", "solidity", "ethereum", "web3", "crypto"]
+    },
+    {
+        "puesto": "ingeniero de redes junior",
+        "modalidad": "hibrido",
+        "sueldo": 38000,
+        "horario": "lunes a viernes, 8am - 5pm",
+        "ubicacion": "santiago",
+        "descripcion": "soporte en configuración y mantenimiento de infraestructura de redes.",
+        "beneficios": [
+            "seguro médico",
+            "capacitaciones técnicas",
+            "certificaciones básicas"
+        ],
+        "palabras_clave": ["redes", "junior", "networking", "switches", "routers", "configuración"]
+    },

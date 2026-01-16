@@ -1,0 +1,158 @@
+@import "./theme.css";
+
+.Chat-Container {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-primary);
+    /* Transparent/Theme bg */
+    border-radius: 12px;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+/* Header Area (Optional) */
+.Chat-Header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Chat-Title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+/* Messages Area */
+.Chat-Messages {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
+
+/* Message Bubbles */
+.Message-Wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.Message-Wrapper.User {
+    justify-content: flex-end;
+}
+
+.Message-Wrapper.AI {
+    justify-content: flex-start;
+}
+
+.Message-Bubble {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.Message-Wrapper.User .Message-Bubble {
+    background-color: var(--text-primary);
+    /* High contrast for user */
+    color: var(--bg-primary);
+    border-bottom-right-radius: 4px;
+}
+
+.Message-Wrapper.AI .Message-Bubble {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-light);
+    border-bottom-left-radius: 4px;
+}
+
+/* Input Area */
+.Chat-Input-Area {
+    padding: 15px 20px;
+    border-top: 1px solid var(--border-light);
+    background-color: rgba(255, 255, 255, 0.02);
+    /* Slight tint */
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Chat-Input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 25px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.Chat-Input:focus {
+    border-color: var(--text-secondary);
+}
+
+.Chat-Send-Button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.Chat-Send-Button:hover {
+    transform: scale(1.05);
+}
+
+.Chat-Send-Button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* No Vacancies State */
+.No-Results-Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.No-Results-Title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.No-Results-Icon {
+    font-size: 50px;
+    opacity: 0.5;
+}
