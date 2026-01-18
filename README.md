@@ -15,7 +15,7 @@ El sistema obtiene los datos de una vacante y los agrega a una base de datos vec
 ### Frontend
 
 - React JS
-- Vite (para aprovechar Preact)
+- Vite (para aprovechar Preact y SWC)
 
 ### Backend
 
