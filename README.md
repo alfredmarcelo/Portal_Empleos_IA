@@ -74,3 +74,4 @@ react@19.2.3
 - El filtrado de datos es vago; se requiere una búsqueda más detallada de las vacantes.
 - El white mode está mal implementado (utilizar solo dark mode).
 - Fallos con la IA y el workflow de n8n.
+- Animaciones rotas o mal hechas.
