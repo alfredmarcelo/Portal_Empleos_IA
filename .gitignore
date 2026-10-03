@@ -1,0 +1,42 @@
+# Entornos virtuales de Python
+.venv/
+venv/
+ENV/
+env/
+backend/AppCurriculum/
+backend/.AppCurriculumLinux/
+backend/AppCurriculumLinux
+
+# Dependencias y compilación de Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Caché y binarios de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Archivos del sistema y editores
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

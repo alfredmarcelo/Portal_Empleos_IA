@@ -24,7 +24,7 @@ export default function Llm_chat({ SCREEN_STATES, setScreenState, handleSearch, 
     }, [messages]);
 
     const handleFetch = async () => {
-        const res = await fetch("http://192.168.8.106:8000/users/Chat_llm/", {
+        const res = await fetch("http://localhost:8000/users/Chat_llm/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -109,6 +109,7 @@ export default function Llm_chat({ SCREEN_STATES, setScreenState, handleSearch, 
                     onKeyDown={handleKeyDown}
                     textinputContainerWidth="100%"
                     textinputWidth="90%"
+                    textinputheight="40%"
                 />
             </div>
         </div>

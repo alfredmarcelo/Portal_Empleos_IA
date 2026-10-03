@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
-    const [mode, setMode] = useState("light");
+    const [mode, setMode] = useState("dark");
 
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", mode);
@@ -22,7 +22,7 @@ export function ThemeProvider({ children }) {
 
 // Hook interno para manejar tema local cuando no hay provider
 function useLocalTheme() {
-    const [mode, setMode] = useState("light");
+    const [mode, setMode] = useState("dark");
 
     useEffect(() => {
         document.documentElement.setAttribute("data-theme", mode);

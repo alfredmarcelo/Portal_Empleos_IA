@@ -45,7 +45,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://192.168.8.106:8000/prueba/",
+        "url": "http://192.168.0.103:8000/prueba/",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -229,7 +229,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://192.168.8.106:8000/Chat_llm/",
+        "url": "http://192.168.0.103:8000/Chat_llm/",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [
@@ -251,7 +251,7 @@
       "parameters": {
         "toolDescription": "Cuando el usuario hable sobre buscar una oferta de empleo utiliza este nodo y en el valor del body escribe el input del usuario",
         "method": "POST",
-        "url": "http://192.168.8.106:8000/pruebas_frontend/",
+        "url": "http://192.168.0.103:8000/pruebas_frontend/",
         "sendBody": true,
         "bodyParameters": {
           "parameters": [

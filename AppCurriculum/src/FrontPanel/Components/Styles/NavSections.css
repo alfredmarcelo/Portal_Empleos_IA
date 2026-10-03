@@ -1,0 +1,22 @@
+.Nav-Sections {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Nav-Section-Item {
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 15px;
+  transition: color 0.2s ease, opacity 0.2s ease;
+  user-select: none;
+}
+
+.Nav-Section-Item:hover {
+  opacity: 0.8;
+}
+
+.Nav-Section-Item.active {
+  color: var(--accent-color, #4dabf7);
+  font-weight: 600;
+}

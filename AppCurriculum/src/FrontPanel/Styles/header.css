@@ -2,12 +2,39 @@
 
 #Header {
   width: 100%;
-  height: 60px;
+  height: var(--header-height, 60px);
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-color: var(--text-secondary);
+  border-width: 0px 0 1px 0;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  z-index: 100;
+  overflow: hidden;
+  transition: height 0.45s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.45s ease;
+}
+
+#Header.expanded {
+  height: 60vh;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+#Header-Top-Bar {
+  width: 100%;
+  height: var(--header-height, 60px);
+  min-height: var(--header-height, 60px);
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  background-color: var(--bg-primary);
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 #User-Account {
@@ -24,4 +51,95 @@
   align-items: center;
   display: flex;
   cursor: pointer;
+  margin-left: auto;
+}
+
+#NombreDePagina {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  color: var(--text-primary);
+  background-color: black;
+  font-size: large;
+}
+
+.Header-Logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+#Logo {
+  width: 35px;
+  height: 30px;
+  border-radius: 10px 0px 10px 0px;
+  background-color: var(--text-primary);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#Header-Expanded-Content {
+  width: 100%;
+  height: calc(60vh - var(--header-height, 60px));
+  min-height: calc(60vh - var(--header-height, 60px));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Header-Image,
+#Header-Image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+[data-theme="dark"] .Header-Image,
+[data-theme="dark"] #Header-Image {
+  filter: none;
+  opacity: 0.9;
+}
+
+#Video-Header {
+  width: 1000px;
+  height: 800px;
+  object-fit: contain;
+  position: absolute;
+  left: 900px;
+  z-index: -1;
+  /* opacity: 0.7; */
+  filter: brightness(0.3);
+  transform: rotate(170deg) scaleY(-1);
+}
+
+#Video-Header2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: 350px;
+  z-index: -1;
+  opacity: 0.7;
+  filter: brightness(0.3);
+  transform: rotate(20deg);
+}
+
+#Video-Header3 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.2;
+  filter: brightness(0.3);
+  transform: rotate(0deg);
 }
